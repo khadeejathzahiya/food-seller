@@ -5225,3 +5225,394 @@ h5 {
     margin-top: -50px;
 
 }
+
+/* ...existing code... */
+
+/* --- Responsive Design --- */
+@media (max-width: 1200px) {
+    .navbar, .content {
+        width: 98%;
+    }
+    .form {
+        left: 70%;
+    }
+    .footer-mainhead {
+        left: 40vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar, .content {
+        width: 100%;
+    }
+    .form {
+        position: static;
+        margin: 30px auto 0;
+        left: 0;
+        top: 0;
+    }
+    .content h1, .content span {
+        font-size: 2rem;
+    }
+    .cate-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-mainhead {
+        position: static;
+        margin: 30px 0 0 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon, .menu, .search {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    ul li {
+        margin: 10px 0 0 20px;
+    }
+    .search {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+    .form {
+        width: 90%;
+        max-width: 350px;
+        margin: 30px auto 0;
+        left: 0;
+        top: 0;
+        position: static;
+    }
+    .categorie .cate-img {
+        flex-direction: column;
+        height: auto;
+    }
+    .box1, .box2, .box3, .box4, .box5 {
+        width: 90vw;
+        max-width: 300px;
+        height: auto;
+        margin: 10px auto;
+        float: none;
+    }
+    .menu-page > div[class^="menu-box"], 
+    .menu-page > div[class*=" menu-box"] {
+        width: 90vw;
+        max-width: 300px;
+        float: none;
+        margin: 10px auto;
+        height: auto;
+    }
+    .contact-page {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    #contact .cont-box1, #contact .cont-box2 {
+        float: none;
+        margin: 20px auto;
+        width: 90vw;
+        max-width: 350px;
+        position: static;
+        bottom: 0;
+    }
+    .footer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .footer-mainhead {
+        position: static;
+        margin: 30px 0 0 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer-head1, .footer-head2, .footer-head3, .footer-head4 {
+        float: none;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .content h1, .content span {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+    .content .para {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    .form {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .cate-main {
+        padding: 5px;
+    }
+    .box1, .box2, .box3, .box4, .box5 {
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .menu-page > div[class^="menu-box"], 
+    .menu-page > div[class*=" menu-box"] {
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .texts, .button {
+        width: 95vw;
+        max-width: 95vw;
+    }
+    .footer-para {
+        font-size: 12px;
+    }
+    .footer-head, .footer-head1 h4, .footer-head2 h4, .footer-head3 h4, .footer-head4 h4 {
+        font-size: 16px;
+    }
+}
+
+/* ...existing code... */
+
+/* Extra: Make .main and .content more flexible */
+@media (max-width: 1200px) {
+    .main, .content {
+        width: 100%;
+        min-width: 0;
+    }
+    .navbar {
+        width: 100%;
+    }
+}
+
+/* Navbar: Stack items vertically and fix menu/search on mobile */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .icon, .menu, .search {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .search {
+        margin-left: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Category section: Stack boxes vertically */
+@media (max-width: 900px) {
+    .categorie .cate-img {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .box1, .box2, .box3, .box4, .box5 {
+        width: 90vw;
+        max-width: 350px;
+        float: none;
+        margin: 10px auto;
+    }
+}
+
+/* Menu page: Stack menu boxes vertically */
+@media (max-width: 900px) {
+    .menu-page {
+        height: auto;
+    }
+    .menu-page > div[class^="menu-box"], 
+    .menu-page > div[class*=" menu-box"] {
+        width: 90vw;
+        max-width: 350px;
+        float: none;
+        margin: 10px auto;
+        height: auto;
+    }
+}
+
+/* Contact section: Stack contact boxes */
+@media (max-width: 900px) {
+    .contact-page {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    #contact .cont-box1, #contact .cont-box2 {
+        float: none;
+        margin: 20px auto;
+        width: 90vw;
+        max-width: 350px;
+        position: static;
+        bottom: 0;
+    }
+}
+
+/* Footer: Stack columns and center text */
+@media (max-width: 900px) {
+    .footer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .footer-mainhead {
+        position: static;
+        margin: 30px 0 0 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer-head1, .footer-head2, .footer-head3, .footer-head4 {
+        float: none;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+/* Small screens: Reduce font and box sizes */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .content h1, .content span {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+    .content .para {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    .form {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .cate-main {
+        padding: 5px;
+    }
+    .box1, .box2, .box3, .box4, .box5 {
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .menu-page > div[class^="menu-box"], 
+    .menu-page > div[class*=" menu-box"] {
+        max-width: 98vw;
+        padding: 10px;
+    }
+    .texts, .button {
+        width: 95vw;
+        max-width: 95vw;
+    }
+    .footer-para {
+        font-size: 12px;
+    }
+    .footer-head, .footer-head1 h4, .footer-head2 h4, .footer-head3 h4, .footer-head4 h4 {
+        font-size: 16px;
+    }
+}
+
+/* Remove floats on mobile for all sections */
+@media (max-width: 900px) {
+    .icon, .menu, .search,
+    .footer-head1, .footer-head2, .footer-head3, .footer-head4 {
+        float: none !important;
+    }
+}
+
+/* ...existing code... */
+
+@media (max-width: 900px) {
+    .desert-page {
+        height: auto;
+        padding: 10px 0;
+    }
+    .desert-head {
+        font-size: 1.5rem !important;
+        width: 100% !important;
+        min-width: 0;
+        margin: 10px 0 !important;
+    }
+    .desert-box1, .desert-box2, .desert-box3, .desert-box4, .desert-box5,
+    .desert-box6, .desert-box7, .desert-box8, .desert-box9, .desert-box10,
+    .desert-box11, .desert-box12, .desert-box13, .desert-box14, .desert-box15,
+    .desert-box16, .desert-box17, .desert-box18, .desert-box19, .desert-box20 {
+        width: 90vw;
+        max-width: 350px;
+        float: none;
+        margin: 15px auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .truffle-img, .blackforest-img {
+        width: 80vw;
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .desert-head {
+        font-size: 1.1rem !important;
+        padding: 8px !important;
+        height: auto !important;
+    }
+    .desert-box1, .desert-box2, .desert-box3, .desert-box4, .desert-box5,
+    .desert-box6, .desert-box7, .desert-box8, .desert-box9, .desert-box10,
+    .desert-box11, .desert-box12, .desert-box13, .desert-box14, .desert-box15,
+    .desert-box16, .desert-box17, .desert-box18, .desert-box19, .desert-box20 {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 10px 0;
+    }
+    .truffle-img, .blackforest-img {
+        width: 95vw;
+        max-width: 180px;
+        height: auto;
+    }
+    .desert-page {
+        padding: 0;
+    }
+}
